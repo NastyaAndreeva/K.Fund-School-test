@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    font-family: 'Gilroy-Medium';
+}
+
+.titles {
+    font-family: 'Gilroy-Bold';
+}
+
+
+/****************** First section menu ***************************/
+.first-section {
+    padding: 0 250px 95px 250px;
+}
+
+.menu {
+    font-size: 18px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 0 40px 0;
+    border-bottom: #828282 1px solid;
+    flex-wrap: wrap;
+}
+
+.menu-text {
+    padding-top: 34px;
+}
+
+.menu_languages {
+    padding-top: 80px;
+    -webkit-transform: rotate(270deg); 
+}
+
+.image {
+    height: 29rem;
+    width: 100%;
+    background-image: url('images/BSPP2266.png');
+    background-repeat: no-repeat;
+}
+
+/**************************************** End section menu **********************************/
+
+/**************************************** About me section  ****************************/
+
+.about-me {
+    text-align: center;
+}
+
+.about-me__background {
+    background-color: #F6F6F6;
+    padding: 80px 0;
+}
+
+.about-me__text {
+    padding-top: 20px;
+}
+
+/**************************************** End about me section  *******************************/
+
+/***************************************** Section skills **************************************/
+
+.section-skills {
+    padding: 0 17rem 6rem 17rem;
+}
+
+.fa-star {
+    color: #E5E5E5;
+}
+
+.stars {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.checked {
+    color: black;
+}
+
+.icons {
+    display: flex;
+    flex-flow: column;
+    width: 11rem;
+    height: 18rem;
+}
+
+.icons_image {
+    height: 6.2rem;
+    width: 6.2rem;
+    padding: 0 2.4rem;
+}
+
+.figma_image {
+    width: 4rem;
+    padding: 0 54px;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titles__heigh {
+    height: 2.4rem;
+}
+
+/******************************************************* End section skills  ***************************/
+
+/******************************************************* Section contacts  *********************************************/
+.contacts {
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+}
+
+.contacts-title {
+    text-align: center;
+}
+
+.contacts-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 342px;
+    margin: 50px auto;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    height: 42px;
+    width: 12.8rem;
+    border-radius: 24px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.LinkedIn {
+    width: 40px;
+    height: 40px;
+    background: url(images/In.png);
+}
+
+.Instagram {
+    width: 40px;
+    height: 40px;
+    background: url(images/Ins.png);
+}
+
+.Behance {
+    width: 40px;
+    height: 40px;
+    background: url(images/Be.png);
+}
+
+.Dribble {
+    width: 40px;
+    height: 40px;
+    background: url(images/Dr.png);
+}
+
+/******************************************************** End section contacts  ****************************************/
+
+
+/******************************************************** Menu **************************************/
+header {
+	position: relative;
+}
+	
+.languages {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1em;
+}
+
+.menu-burger {
+    width: 375px;
+    height: 812px;
+    padding: 66px 26px;
+}
+
+.menu-close {
+	background-image: url(images/close.png);
+	width: 23px;
+	height: 22px;
+	z-index: 100;
+    margin-top: 25px;
+}
+
+.menu-popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	font-size: 34px;
+	line-height: 2.43;	
+    height: 812px;
+} 
+
+a {
+    text-decoration: none;
+    color: #828282;
+}
+
+li {
+    list-style-type: none;
+}
+
+.body_pointer * {
+	cursor: pointer;
+}
+
+.languages__vertical {
+    -webkit-transform: rotate(90deg); 
+    padding-bottom: 100px;
+}
+
+.active {
+    font-weight: 700;
+    color: black;
+}
+/************************************************* End Menu **************************/
+
+/************************************************** Mobile version ************************/
+
+@media all and (max-width: 400px) {
+body {
+    width: 375px;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
+
+.menu_languages {
+    display: none;
+}
+
+.first-section {
+    /* background-color: cadetblue; */
+    padding: 0;
+    padding-left: 29px;
+}
+
+.menu-text {
+    width: 375px;
+}
+
+.menu, .menu-text {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+}
+
+.section-skills {
+    padding: 0 ;
+}
+
+.about-me__background {
+    width: 375px;
+}
+
+.about-me__text {
+    padding: 35px;
+}
+
+.image {
+    background-image: url('images/BSPP2266mob.png');
+}
+
+.icons {
+    width: 166px;
+    padding: 0 104px;
+}
+
+  }
+
+
+
+
+
